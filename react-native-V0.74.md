@@ -35,3 +35,9 @@ Yoga calculates these four for each UI element.
 4.  **Spacing**
 
 With **Yoga**, you can create **responsive layouts** that adapt to different screen sizes and orientations. It also implements a widely used concept called **CSS Flexbox** in React Native. So you already feel that yoga is the heart (♥︎) of React Native flexible UI.
+
+### Yoga 3.0 — what’s new?
+
+In all previous versions of React Native, there were some incorrect layout behaviors. **Yoga 3** solved all of them. One of the most common issues was that the **‘row-reverse’** style was not functioning properly.
+
+Let’s look at the image below where the **left** one is from **V0.73** and the **right** one is from **V0.74**.
