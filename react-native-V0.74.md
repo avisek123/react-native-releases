@@ -83,3 +83,74 @@ When you enable New Architecture in your React Native app with **V0.74**, you wi
 
 ![Bridgeless mode (2)](https://github.com/user-attachments/assets/1842f93a-ec11-4949-861c-f60baa0643a7)
 
+# **New Architecture: Batched onLayout Updates**
+
+Another great news is that the React Native team not only made the New Architecture **Bridgeless Mode** the default, but they also improved this architecture to handle batched **onLayout** updates (executing multiple updates in a single rendering). This optimization enhances performance by minimizing layout-related computations during rendering.
+
+### The “onLayout” props
+
+The onLayout prop in React Native is used to handle **layout (position)** changes for a component. When the layout of a component changes (due to mounting, resizing, rotation, or other factors), the onLayout callback function is triggered.
+
+You can use this prop like below to **perform actions** based on the updated layout information.
+
+```javascript
+function App() {
+  return (
+    <View
+      onLayout={() => {
+        console.log("Component has been invoked 🚀");
+      }}
+    />
+  );
+}
+```
+
+### How “onLayout" batch update works?
+
+Assume the component **\<App/>** is as shown below, where each **View** triggers an **onLayout** callback function when mounted.
+
+```javascript
+function App() {
+  const [state1, setState1] = useState(false);
+  const [state2, setState2] = useState(false);
+  const [state3, setState3] = useState(false);
+
+  console.log("✅ COMPONENT RE-RENDERED .....");
+
+  return (
+    <View>
+      <View
+        onLayout={() => {
+          console.log("FIRST View invoked");
+          setState1(true); // Update state1 when the View mounts
+        }}
+      ></View>
+
+      <View
+        onLayout={() => {
+          console.log("SECOND View invoked");
+          setState2(true); // Update state2 when the View mounts
+        }}
+      ></View>
+
+      <View
+        onLayout={() => {
+          console.log("THIRD View invoked");
+          setState3(true); // Update state3 when the View mounts
+        }}
+      ></View>
+    </View>
+  );
+}
+```
+
+Now, in React Native **V0.73**, you will see an output like below 👇
+Did you notice that, on each execution of the **“onLayout”** callback, it re-renders the whole component? Yeah, it is not expected.
+
+Now, let’s see the output in React Native **V0.74** with enabling **New Architecture** 👇
+
+
+![Bridgeless mode](https://github.com/user-attachments/assets/f85f192c-5b51-410c-b40d-38d69abeb681)
+
+Amazing performance 🔥. The component got re-rendered only once for all 3 **“onLayout”** callback execution.
+
