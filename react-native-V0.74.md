@@ -53,7 +53,7 @@ We then applied this style in the **\<Parent/>** component.
     // Style for <Parent/> component
     style={{
           flexDirection: 'row-reverse',
-          backgroundColor: 'dodgerblue',
+          backgroundColor: 'lightblue',
           flex: 1,
           marginLeft: 100,
           marginRight: 20,
