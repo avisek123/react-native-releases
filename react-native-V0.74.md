@@ -1,4 +1,4 @@
-# React Native V0.74 — Stable is out 🚀
+# React Native V0.74 🚀
 
 
 
