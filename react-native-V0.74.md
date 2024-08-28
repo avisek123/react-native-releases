@@ -41,3 +41,23 @@ With **Yoga**, you can create **responsive layouts** that adapt to different scr
 In all previous versions of React Native, there were some incorrect layout behaviors. **Yoga 3** solved all of them. One of the most common issues was that the **‘row-reverse’** style was not functioning properly.
 
 Let’s look at the image below where the **left** one is from **V0.73** and the **right** one is from **V0.74**.
+
+
+![Bridgeless mode (1)](https://github.com/user-attachments/assets/00ce2106-083c-4515-880c-5fff7d9eedc2)
+
+In the above image, we have a **\<Container/>**, then inside it a **\<Parent/>** component, then inside **two \<Child/>** components.
+
+We then applied this style in the **\<Parent/>** component.
+
+```javascript
+    // Style for <Parent/> component
+    style={{
+          flexDirection: 'row-reverse',
+          backgroundColor: 'dodgerblue',
+          flex: 1,
+          marginLeft: 100,
+          marginRight: 20,
+          marginVertical: 20,
+          alignItems: 'center'
+    }}
+```
