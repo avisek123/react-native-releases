@@ -154,3 +154,15 @@ Now, let’s see the output in React Native **V0.74** with enabling **New Archit
 
 Amazing performance 🔥. The component got re-rendered only once for all 3 **“onLayout”** callback execution.
 
+# **Yarn 3 for New Projects**
+
+**Yarn 3** is now the default JavaScript package manager for new projects initialized with React Native Community CLI. This replaces Yarn Classic **(1.x)**, which was deprecated and previously used as the default.
+
+Yarn 3 speeds up the process of installing and updating dependencies and optimizes how dependencies are stored.
+<img width="998" alt="Screenshot 2024-08-29 at 12 09 00 AM" src="https://github.com/user-attachments/assets/8fa46cbf-dc67-4002-8095-fa9ad1942baf">
+
+# **Android app size reduction**
+
+![0 74-android-app-size-4200c5fc0a6daaff0b2a377c6f77af2c](https://github.com/user-attachments/assets/160ce907-fa98-4db8-a9f7-da397693e01f)
+
+
