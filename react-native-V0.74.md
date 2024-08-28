@@ -81,4 +81,5 @@ From **V0.74**, once you enable the New Architecture, you will see that **‘Bri
 
 When you enable New Architecture in your React Native app with **V0.74**, you will see these **two lines** like the below in your Metro Log:
 
-<img width="911" alt="Screenshot 2024-08-28 at 10 49 00 PM" src="https://github.com/user-attachments/assets/e277ea3b-ba00-479e-a42d-5d5d0258752d">
+![Bridgeless mode (2)](https://github.com/user-attachments/assets/1842f93a-ec11-4949-861c-f60baa0643a7)
+
