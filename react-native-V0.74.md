@@ -45,7 +45,7 @@ Let’s look at the image below where the **left** one is from **V0.73** and the
 
 ![Bridgeless mode (1)](https://github.com/user-attachments/assets/00ce2106-083c-4515-880c-5fff7d9eedc2)
 
-In the above image, we have a **\<Container/>**, then inside it a **\<Parent/>** component, then inside **two \<Child/>** components.
+In the above image, we have a **\<Container/>**, then inside it a **\<Parent/>** component, then inside **two \<Box/>** components.
 
 We then applied this style in the **\<Parent/>** component.
 
@@ -61,3 +61,17 @@ We then applied this style in the **\<Parent/>** component.
           alignItems: 'center'
     }}
 ```
+
+Did you notice, that we added a **marginLeft** of **100** pixels for **\<Parent/>**?
+
+- Yeah, but see the output in React Native **V0.73** (the left one) from the above image. It shows a 100 pixels margin on the **right (not on the left)**!!
+
+- Okay, now let’s see the output of React Native **V0.74** (the right one). Great, in V0.74 we see a perfect 100-pixel margin at **left,** and also two **\<Child/>** components got **reversed** 🚀
+
+So, in Yoga-2, if you apply a **‘row-reverse’** flex-direction with **“margin”** or **“padding”** or **“border”** in a component then the edges of that component also get flipped. But in Yoga-3 it has been solved perfectly 💯
+
+**Yoga-3** has brought some other important styling components that were missing in Yoga-2.
+
+- **'space-evenly'** property for alignContent style
+
+- **'static'** property for position style
