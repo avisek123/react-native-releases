@@ -75,3 +75,10 @@ So, in Yoga-2, if you apply a **‘row-reverse’** flex-direction with **“mar
 - **'space-evenly'** property for alignContent style
 
 - **'static'** property for position style
+
+# **New Architecture: Bridgeless by Default**
+From **V0.74**, once you enable the New Architecture, you will see that **‘Bridgeless Mode’** has been enabled **automatically**. However, the New Architecture itself is still not yet enabled by default.
+
+When you enable New Architecture in your React Native app with **V0.74**, you will see these **two lines** like the below in your Metro Log:
+
+<img width="911" alt="Screenshot 2024-08-28 at 10 49 00 PM" src="https://github.com/user-attachments/assets/e277ea3b-ba00-479e-a42d-5d5d0258752d">
