@@ -13,6 +13,8 @@ The highlights are:
 - **New Architecture: Batched onLayout Updates**
 
 - **Yarn 3 for New Projects**
+  
+- **Android app size reduction**
 
 Let’s dive into each of the new highlights.
 
@@ -164,6 +166,9 @@ Yarn 3 speeds up the process of installing and updating dependencies and optimiz
 
 
 # **Android app size reduction**
+The minimum SDK bump, together with several improvements at our native build, allowed us to greatly reduce the app size on user devices.
+
+For example a newly created app with React Native 0.74 occupies ~13% less space on user device, resulting in ~4MB saved on device.
 
 ![0 74-android-app-size-4200c5fc0a6daaff0b2a377c6f77af2c](https://github.com/user-attachments/assets/160ce907-fa98-4db8-a9f7-da397693e01f)
 
