@@ -145,6 +145,7 @@ function App() {
 ```
 
 Now, in React Native **V0.73**, you will see an output like below 👇
+
 Did you notice that, on each execution of the **“onLayout”** callback, it re-renders the whole component? Yeah, it is not expected.
 
 Now, let’s see the output in React Native **V0.74** with enabling **New Architecture** 👇
