@@ -72,3 +72,5 @@ Starting from December 31st 2024, the init command won’t create a project anym
   **`npx create-expo-app`**.
 
 - Invoke the Community CLI directly with **`npx @react-native-community/cli init`**.
+  ![0 75-deprecation-6b1313b48e5c70e39c32db72f9a1fad8](https://github.com/user-attachments/assets/b0f2205f-0844-4a37-a479-6a28ec14c6cd)
+
