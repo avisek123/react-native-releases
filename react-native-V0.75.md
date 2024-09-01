@@ -15,6 +15,9 @@ The highlights are:
 - **Expo SDK 51 supports**
 
 - **Auto-linking performance improvements**
+  
+  ![1723693787094](https://github.com/user-attachments/assets/da210206-3174-4ebb-9bdf-89c84ab3cf77)
+
 
 Let’s dive into each of the new highlights.
 
