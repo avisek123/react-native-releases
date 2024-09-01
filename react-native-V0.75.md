@@ -79,6 +79,9 @@ Starting from December 31st 2024, the init command won’t create a project anym
 
 Here's a chart that presents what the **Core** of React Native can do and what a **Framework** (such as Expo) can do. Let’s take a look at the chart below.
 
+![Uploading image-3.png…]()
+
+
 From the above image, the brown sections show the responsibilities of the Core of React Native, and the green sections show the responsibilities of a Framework. At the present moment, we are very lucky that the Expo team has created a production-grade framework for us, which provides all the necessary tools (mentioned in the chart above) to make our app ready for the Apple and Play Stores without any hassle. Finally, we can recall a quote from the stage of React Conf, which highlights the need for a framework.
 
 # **Expo SDK 51 supports**
