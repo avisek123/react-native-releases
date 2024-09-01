@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-- **Sunset of react-native-init command**
+# **Sunset of react-native-init command**
 
 Historically, **`react-native init`** was the default command to create new React Native projects. However, in 2024, we feel this command does not provide the same onboarding experience that a framework would offer you. That is why we are not recommending it anymore, instead you should use a framework like Expo.
 
