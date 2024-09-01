@@ -72,3 +72,36 @@ Starting from December 31st 2024, the init command won’t create a project anym
   **`npx create-expo-app`**.
 
 - Invoke the Community CLI directly with **`npx @react-native-community/cli init`**.
+
+# **Recommendation to use Frameworks**
+
+Here's a chart that presents what the **Core** of React Native can do and what a **Framework** (such as Expo) can do. Let’s take a look at the chart below.
+
+From the above image, the brown sections show the responsibilities of the Core of React Native, and the green sections show the responsibilities of a Framework. At the present moment, we are very lucky that the Expo team has created a production-grade framework for us, which provides all the necessary tools (mentioned in the chart above) to make our app ready for the Apple and Play Stores without any hassle. Finally, we can recall a quote from the stage of React Conf, which highlights the need for a framework.
+
+# **Expo SDK 51 supports**
+
+We can now say that **Expo** is an integral part of React Native, as it is the [**only react native framework**](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps) with huge popularity due to its complete package of production-grade app development tools. The **Expo** team also sees this and has quickly added support for **React Native 0.75** with **Expo SDK 51**
+
+# **Auto-linking performance improvements**
+
+To understand better, let’s first understand a bit of Auto-linking.
+
+### What is Auto-linking?
+
+Auto-linking is a feature introduced in **React Native 0.60** that simplifies the process of **linking** native modules (connecting native code with JS code) to your React Native project. Before **`Auto-linking`**, when you added a new library, you would need to manually link it to your project using tools like **CocoaPods** for **iOS** or **Gradle** for **Android**. **Auto-linking** automates this process, making it easier to install any native modules (libraries) with a simple install command without additional configuration.
+
+### Two Steps of Auto-linking
+
+When a developer runs an **npm** or **yarn** command to install a **native module** package into a React Native app, the package is first downloaded into the app’s **`node_modules`** directory. After the installation is complete, the **auto-linking** process starts. This auto-linking process is completed in **two** steps.
+
+1. **`Discovery Process Step:`** This process again has two steps.
+   1. **`Scanning:`** Right after the native module is downloaded, the **core** of React Native scans your entire project to find the newly added library.
+   2. **`Identifying:`** After scanning, the **core** of React Native identifies the newly installed library and gathers information about it, such as its configuration and dependencies.
+2. **`Code Generation Step:`** Once the **discovery process** is complete, the **core** of React Native now generates the necessary code to link the library’s **native code** to your project’s **JS code**.
+
+### Performance Boost in 0.75
+
+As **Expo** is the only recommended framework by the **React Native team**, both teams made a great decision to split the responsibility of **auto-linking** into two parts, which created a significant performance boost. From now on, the **`Discovery Process Step`** (shown above) will be handled by the **Expo** framework, and the **`Code Generation Step`** will be managed by the **core** of React Native 🔥.
+
+With **Expo SDK 51** and **React Native 0.75**, the auto-linking step for React Native libraries (which are not [**Expo modules**](https://docs.expo.dev/modules/overview/)) is now faster — up to **~6.5x faster** on **Android** and **~1.5x faster** on **iOS**. 🚀.
