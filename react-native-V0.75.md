@@ -66,6 +66,8 @@ Historically, **`react-native init`** was the default command to create new Reac
 
 You can still use **`react-native init`** to create new projects using the Community CLI & template today, but you will see the following warning:
 
+![0 75-deprecation-6b1313b48e5c70e39c32db72f9a1fad8](https://github.com/user-attachments/assets/b0f2205f-0844-4a37-a479-6a28ec14c6cd)
+
 Starting from December 31st 2024, the init command won’t create a project anymore. You will have to either:
 
 - Use a framework such as Expo, with its own dedicate command to create a new project, such as
@@ -105,3 +107,7 @@ When a developer runs an **npm** or **yarn** command to install a **native modul
 As **Expo** is the only recommended framework by the **React Native team**, both teams made a great decision to split the responsibility of **auto-linking** into two parts, which created a significant performance boost. From now on, the **`Discovery Process Step`** (shown above) will be handled by the **Expo** framework, and the **`Code Generation Step`** will be managed by the **core** of React Native 🔥.
 
 With **Expo SDK 51** and **React Native 0.75**, the auto-linking step for React Native libraries (which are not [**Expo modules**](https://docs.expo.dev/modules/overview/)) is now faster — up to **~6.5x faster** on **Android** and **~1.5x faster** on **iOS**. 🚀.
+
+# That's All 🙋‍♂️
+
+I hope you enjoyed reading it. It would be really great if you could consider giving it a [**STAR**]
