@@ -15,9 +15,8 @@ The highlights are:
 - **Expo SDK 51 supports**
 
 - **Auto-linking performance improvements**
-  
-  ![1723693787094](https://github.com/user-attachments/assets/da210206-3174-4ebb-9bdf-89c84ab3cf77)
 
+  ![1723693787094](https://github.com/user-attachments/assets/da210206-3174-4ebb-9bdf-89c84ab3cf77)
 
 Let’s dive into each of the new highlights.
 
@@ -31,7 +30,7 @@ One of the most highly requested features is the support for **`%`** values in v
 
 Today we will explore the code for the **`gap`** property. Let’s take a look at the image below.
 
-- **Solve textAlign not working with inline views on Android.**
+# **Solve textAlign not working with inline views on Android.**
 
 As part of making the New Architecture stable, the team has fixed several bugs in **React Native 0.75**. One of them is “[**`textAlign`** not working with inline views on Android.](https://github.com/facebook/react-native/pull/44146)” The good news is that it has been fixed in **0.75** 🎯. Let’s take a look at the image below.
 
