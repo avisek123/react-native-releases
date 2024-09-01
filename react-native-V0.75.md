@@ -66,11 +66,13 @@ Historically, **`react-native init`** was the default command to create new Reac
 
 You can still use **`react-native init`** to create new projects using the Community CLI & template today, but you will see the following warning:
 
+  ![0 75-deprecation-6b1313b48e5c70e39c32db72f9a1fad8](https://github.com/user-attachments/assets/b0f2205f-0844-4a37-a479-6a28ec14c6cd)
+
 Starting from December 31st 2024, the init command won’t create a project anymore. You will have to either:
 
 - Use a framework such as Expo, with its own dedicate command to create a new project, such as
   **`npx create-expo-app`**.
 
 - Invoke the Community CLI directly with **`npx @react-native-community/cli init`**.
-  ![0 75-deprecation-6b1313b48e5c70e39c32db72f9a1fad8](https://github.com/user-attachments/assets/b0f2205f-0844-4a37-a479-6a28ec14c6cd)
+
 
