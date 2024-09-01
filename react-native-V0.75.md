@@ -6,9 +6,9 @@ The highlights are:
 
 - **Yoga 3.1**
 
-- **Sunset of react-native-init command**
-
 - **Solve textAlign not working with inline views on Android.**
+
+- **Sunset of react-native-init command**
 
 - **Recommendation to use Frameworks**
 
@@ -59,3 +59,16 @@ const styles = StyleSheet.create({
   },
 });
 ```
+
+- **Sunset of react-native-init command**
+
+Historically, **`react-native init`** was the default command to create new React Native projects. However, in 2024, we feel this command does not provide the same onboarding experience that a framework would offer you. That is why we are not recommending it anymore, instead you should use a framework like Expo.
+
+You can still use **`react-native init`** to create new projects using the Community CLI & template today, but you will see the following warning:
+
+Starting from December 31st 2024, the init command won’t create a project anymore. You will have to either:
+
+- Use a framework such as Expo, with its own dedicate command to create a new project, such as
+  **`npx create-expo-app`**.
+
+- Invoke the Community CLI directly with **`npx @react-native-community/cli init`**.
