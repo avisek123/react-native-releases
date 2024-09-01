@@ -14,6 +14,8 @@ The highlights are:
 
 - **Expo SDK 51 supports**
 
+- **Auto-linking performance improvements**
+
 Let’s dive into each of the new highlights.
 
 - **What’s new in Yoga 3.1 ?**
