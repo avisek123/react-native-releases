@@ -110,4 +110,4 @@ With **Expo SDK 51** and **React Native 0.75**, the auto-linking step for React 
 
 # That's All 🙋‍♂️
 
-I hope you enjoyed reading it. It would be really great if you could consider giving it a [**STAR**]
+I hope you enjoyed reading it. It would be really great if you could consider giving it a [**STAR**](https://github.com/avisek123/react-native-releases/blob/maste)
