@@ -18,7 +18,7 @@ The highlights are:
 
 Let’s dive into each of the new highlights.
 
-- **What’s new in Yoga 3.1 ?**
+# **Yoga 3.1**
 
 One of the most highly requested features is the support for **`%`** values in various places, such as **gap** properties (e.g., **`gap`**, **`rowGap`**, **`columnGap`**) and **translation** properties (e.g., **`translateY`**, **`translateX`** ). The great news is that **Yoga 3.1** now has this support 🚀.
 
