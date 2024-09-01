@@ -8,9 +8,9 @@ The highlights are:
 
 - **Sunset of react-native-init command**
 
-- **Recommendation to use Frameworks**
-
 - **Solve textAlign not working with inline views on Android.**
+
+- **Recommendation to use Frameworks**
 
 - **Expo SDK 51 supports**
 
