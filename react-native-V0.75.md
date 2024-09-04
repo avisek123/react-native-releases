@@ -29,16 +29,11 @@ Today we will explore the code for the **`gap`** property. Let’s take a look a
 ![row-gap](https://github.com/user-attachments/assets/4e08ccab-b8ff-4dd7-b4d0-0697ea94fd42)
 
 
-One of the most highly requested features is the support for **`%`** values in various places, such as **gap** properties (e.g., **`gap`**, **`rowGap`**, **`columnGap`**) and **translation** properties (e.g., **`translateY`**, **`translateX`** ). The great news is that **Yoga 3.1** now has this support 🚀.
-
-Today we will explore the code for the **`gap`** property. Let’s take a look at the image below.
-
-![text-align](https://github.com/user-attachments/assets/e652939a-452a-4940-865b-584d0efc0cef)
-
-
 # **Solve textAlign not working with inline views on Android.**
 
 As part of making the New Architecture stable, the team has fixed several bugs in **React Native 0.75**. One of them is “[**`textAlign`** not working with inline views on Android.](https://github.com/facebook/react-native/pull/44146)” The good news is that it has been fixed in **0.75** 🎯. Let’s take a look at the image below.
+
+![text-align](https://github.com/user-attachments/assets/e652939a-452a-4940-865b-584d0efc0cef)
 
 In the above image, we see **text** with an **image (react native logo)** as an inline view (meaning in the same line). To improve the UI, it is natural to want the **logo** to be centered along with the text when applying the **`textAlign`** property as the **`center`**. However, you may notice that on the left side of the above image, the React Native logo is not properly centered with the text, while on the right side, it is perfectly **centered** because of **React Native 0.75**. Amazing, right? Below is the code for the above image.
 
