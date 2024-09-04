@@ -26,9 +26,15 @@ One of the most highly requested features is the support for **`%`** values in v
 
 Today we will explore the code for the **`gap`** property. Let’s take a look at the image below.
 
+![row-gap](https://github.com/user-attachments/assets/4e08ccab-b8ff-4dd7-b4d0-0697ea94fd42)
+
+
 One of the most highly requested features is the support for **`%`** values in various places, such as **gap** properties (e.g., **`gap`**, **`rowGap`**, **`columnGap`**) and **translation** properties (e.g., **`translateY`**, **`translateX`** ). The great news is that **Yoga 3.1** now has this support 🚀.
 
 Today we will explore the code for the **`gap`** property. Let’s take a look at the image below.
+
+![text-align](https://github.com/user-attachments/assets/e652939a-452a-4940-865b-584d0efc0cef)
+
 
 # **Solve textAlign not working with inline views on Android.**
 
