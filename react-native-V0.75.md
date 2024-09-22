@@ -117,6 +117,6 @@ With **Expo SDK 51** and **React Native 0.75**, the auto-linking step for React 
 
 I hope you enjoyed reading it. It would be really great if you could consider giving it a [**STAR**](https://github.com/avisek123/react-native-releases/blob/maste)
 
-![GettingStartedCongratulations](https://github.com/user-attachments/assets/1ca9fec3-fc9b-40dd-b3ca-e7dd5db053e8)
+![WhatsApp Image 2024-09-19 at 7 49 24 PM (1)](https://github.com/user-attachments/assets/f04172e9-0d8f-4e25-95af-bba7053ac27e)
 
 
