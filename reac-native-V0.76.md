@@ -35,7 +35,13 @@ The Expo team released SDK 52 beta (stable within 2 weeks) with lots of exciting
 
 # **Expo DOM Component**
 
-​DOM Components are super helpful for migrating a web app (like a React or Next.js app) to a mobile app (like a React Native app) or if you have a web library that isn't yet available for native Android or iOS. To save months of work, you can just create a DOM Component, and copy-paste your web code (like code with <div>, <h1>, etc.) into your Expo project, and write “use dom” at the top of the component (Expo JS file). Boom, your React (web) code now works smoothly in your native app 🔥
+DOM Components in Expo indeed offer a great solution for reusing web code in a React Native app, especially when you’re migrating an app from the web to mobile or using a library that doesn’t yet support native platforms.
+
+With Expo's support for the "use dom" directive, you can effortlessly bring in standard HTML tags like <div>, <h1>, and other web components. Adding "use dom" at the top of your file signals Expo to interpret the JSX as HTML-based components, making it feel like you're working in a browser environment within a native app.
+
+This can save you a ton of time, especially for components that don’t rely on native APIs. You don’t have to rewrite everything in React Native's <View>, <Text>, and other native components — just copy and paste your code, and it’s ready to go. It’s a fantastic feature for developers maintaining both web and mobile versions of an app, and it aligns well with the cross-platform capabilities Expo offers.
+
+If you’re already using Expo, this addition makes the platform even more powerful for cross-platform development! 🚀
 
 # **Experimental Tree Shaking**
 
