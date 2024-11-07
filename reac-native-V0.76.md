@@ -4,19 +4,19 @@ Hey **React Native 💙** Developers,
 
 The highlights are:
 
-New Architecture now Default 🚀
-New React Native DevTools
-Expo SDK 52 beta released 🔥
-15x Faster Metro build 😱
-New boxShadow style props added
-New React Native Edge-to-Edge SDK 💯
-Android Apps now ~3.8Mb smaller and ~15ms less startup time 💯
+- **New Architecture now Default 🚀**
+- **New React Native DevTools**
+- **Expo SDK 52 beta released 🔥**
+- **15x Faster Metro build 😱**
+- **New boxShadow style props added**
+- **New React Native Edge-to-Edge SDK 💯**
+- **Android Apps now ~3.8Mb smaller and ~15ms less startup time 💯**
 
 ![1723693787094](https://github.com/user-attachments/assets/da210206-3174-4ebb-9bdf-89c84ab3cf77)
 
 Let’s dive into each of the new highlights.
 
-# **React Native 0.76 stable out 🚀**
+# **New Architecture now Default 🚀**
 
 ​Since 2018, the React Native team worked on a New Architecture to replace the slow bridge (JSON communication) between JS and Native code (Swift, Kotlin). They created a C++ layer called JSI to speed up the communication. This new flow of communication is called New Architecture. In March 2022, it became an experimental option in React Native 0.68. Now, in 0.76, the New Architecture is production-ready 🔥
 
