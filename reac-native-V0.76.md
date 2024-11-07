@@ -12,7 +12,8 @@ The highlights are:
 - **New React Native Edge-to-Edge SDK 💯**
 - **Android Apps now ~3.8Mb smaller and ~15ms less startup time 💯**
 
-![1723693787094](https://github.com/user-attachments/assets/da210206-3174-4ebb-9bdf-89c84ab3cf77)
+![0 76](https://github.com/user-attachments/assets/03817880-3249-4f5e-8a6c-641b8276601d)
+
 
 Let’s dive into each of the new highlights.
 
@@ -25,6 +26,7 @@ Let’s dive into each of the new highlights.
 After 6 years of hard work and learning from all previous DevTools (JSC Debugger, Remote JS Debugger, Hermes Debugger, Flipper, Dev Menu), the team finally released the next-gen debugging stack & made it the default in 0.76. It can debug nearly every component of the Dev Environment (Hermes, Metro, React code). So, from 0.76 you don’t need any other Debugging Tools—just Chrome or Microsoft Edge installed on your device. No other setup is required 🤩
 
 # **Expo SDK 52 beta released**
+![unnamed](https://github.com/user-attachments/assets/091bb870-3eb5-49a9-aed4-9f852f78552e)
 
 The Expo team released SDK 52 beta (stable within 2 weeks) with lots of exciting features, including React Native 0.76. The most exciting are:
 
@@ -39,15 +41,24 @@ The Expo team released SDK 52 beta (stable within 2 weeks) with lots of exciting
 
 SDK 52 adds experimental Tree Shaking support. This allows Expo to automatically remove unused imports and exports from your app. For example, if you use the lucide-react library and only need ChevronLeft and ChevronRighticons, Tree Shaking will keep just those icons in your app's JS bundle. Unused icons will be removed. One benchmark showed this can reduce bundle size by up to 87% 🚀.
 
+![GY9XI4jbAAImTTx](https://github.com/user-attachments/assets/3507dc78-15c9-45be-971d-299cacfb63e1)
+
 # **15x Faster Metro build 😱**
+
+
+https://github.com/user-attachments/assets/e8199628-2793-4b4c-871a-e526d4f0c20d
+
 
 Metro release included a bunch of performance improvements to our resolver, making it around 15x faster. That's especially good news for warm builds.
 
 # **New boxShadow style props added**
 
+![1729827440444](https://github.com/user-attachments/assets/765a2414-e93a-49d8-8b3a-2e143c2e5941)
+
 boxShadow adds a shadow to an element, with the ability to control the position, color, size, and blurriness of the shadow.boxShadow can take either a string, which mimics the CSS syntax, or JS objects which can embed variables. For example the string ‘5 5 5 0 rgba(255, 0, 0, 0.5)’ and the object {offsetX: 5, offsetY: 5, blurRadius: 5, spreadDistance: 0, color: ‘rgba(255, 0, 0, 0.5)’}
 
 # **New React Native Edge-to-Edge SDK 💯**
+![unnamed](https://github.com/user-attachments/assets/d8879f10-5704-4a36-bd77-3ea13d551ef5)
 
 Edge-to-edge means that the app content will use the entire screen, including areas under the device status bar(the bar that shows you time, battery charge, etc.) and the device navigation bar. Currently, edge-to-edge is optional for apps, but from Android 15, with the app's Target SDK level set to 35 or higher, edge-to-edge will be the only choice, and the status & navigation bars will be transparent. However, React Native 0.76 still uses Target SDK Level 34 as the default.
 
