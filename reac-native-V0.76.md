@@ -68,6 +68,8 @@ boxShadow adds a shadow to an element, with the ability to control the position,
 
 Edge-to-edge means that the app content will use the entire screen, including areas under the device status bar(the bar that shows you time, battery charge, etc.) and the device navigation bar. Currently, edge-to-edge is optional for apps, but from Android 15, with the app's Target SDK level set to 35 or higher, edge-to-edge will be the only choice, and the status & navigation bars will be transparent. However, React Native 0.76 still uses Target SDK Level 34 as the default.
 
+The important thing to consider is that Mathieu mentioned we can expect Google to force all apps to update their Target SDK level to 35 by August 2025, based on previous years' experience. This means it will be mandatory for every React Native app to handle edge-to-edge by this time. But yeah, this new SDK supports Immersive mode (the mode where both the status bar and navigation bar get hidden) without any extra hassle (as shown in the above image).
+
 ### Android Apps now ~3.8Mb smaller and ~15ms less startup time 💯
 
 React Native 0.76 will ship with a reduced number of native libraries, as we merged a lot of our native code into a single library called libreactnative.so.
