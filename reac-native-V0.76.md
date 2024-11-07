@@ -35,53 +35,27 @@ The Expo team released SDK 52 beta (stable within 2 weeks) with lots of exciting
 
 ​DOM Components are super helpful for migrating a web app (like a React or Next.js app) to a mobile app (like a React Native app) or if you have a web library that isn't yet available for native Android or iOS. To save months of work, you can just create a DOM Component, and copy-paste your web code (like code with <div>, <h1>, etc.) into your Expo project, and write “use dom” at the top of the component (Expo JS file). Boom, your React (web) code now works smoothly in your native app 🔥
 
-# **Sunset of react-native-init command**
+# **Experimental Tree Shaking**
 
-Historically, **`react-native init`** was the default command to create new React Native projects. However, in 2024, we feel this command does not provide the same onboarding experience that a framework would offer you. That is why we are not recommending it anymore, instead you should use a framework like Expo.
+SDK 52 adds experimental Tree Shaking support. This allows Expo to automatically remove unused imports and exports from your app. For example, if you use the lucide-react library and only need ChevronLeft and ChevronRighticons, Tree Shaking will keep just those icons in your app's JS bundle. Unused icons will be removed. One benchmark showed this can reduce bundle size by up to 87% 🚀.
 
-You can still use **`react-native init`** to create new projects using the Community CLI & template today, but you will see the following warning:
+# **15x Faster Metro build 😱**
 
-![0 75-deprecation-6b1313b48e5c70e39c32db72f9a1fad8](https://github.com/user-attachments/assets/b0f2205f-0844-4a37-a479-6a28ec14c6cd)
+Metro release included a bunch of performance improvements to our resolver, making it around 15x faster. That's especially good news for warm builds.
 
-Starting from December 31st 2024, the init command won’t create a project anymore. You will have to either:
+# **New boxShadow style props added**
 
-- Use a framework such as Expo, with its own dedicate command to create a new project, such as
-  **`npx create-expo-app`**.
+boxShadow adds a shadow to an element, with the ability to control the position, color, size, and blurriness of the shadow.boxShadow can take either a string, which mimics the CSS syntax, or JS objects which can embed variables. For example the string ‘5 5 5 0 rgba(255, 0, 0, 0.5)’ and the object {offsetX: 5, offsetY: 5, blurRadius: 5, spreadDistance: 0, color: ‘rgba(255, 0, 0, 0.5)’}
 
-- Invoke the Community CLI directly with **`npx @react-native-community/cli init`**.
+# **New React Native Edge-to-Edge SDK 💯**
 
-# **Recommendation to use Frameworks**
+Edge-to-edge means that the app content will use the entire screen, including areas under the device status bar(the bar that shows you time, battery charge, etc.) and the device navigation bar. Currently, edge-to-edge is optional for apps, but from Android 15, with the app's Target SDK level set to 35 or higher, edge-to-edge will be the only choice, and the status & navigation bars will be transparent. However, React Native 0.76 still uses Target SDK Level 34 as the default.
 
-Here's a chart that presents what the **Core** of React Native can do and what a **Framework** (such as Expo) can do. Let’s take a look at the chart below.
+### Android Apps now ~3.8Mb smaller and ~15ms less startup time 💯
 
-From the above image, the brown sections show the responsibilities of the Core of React Native, and the green sections show the responsibilities of a Framework. At the present moment, we are very lucky that the Expo team has created a production-grade framework for us, which provides all the necessary tools (mentioned in the chart above) to make our app ready for the Apple and Play Stores without any hassle. Finally, we can recall a quote from the stage of React Conf, which highlights the need for a framework.
+React Native 0.76 will ship with a reduced number of native libraries, as we merged a lot of our native code into a single library called libreactnative.so.
 
-# **Expo SDK 51 supports**
-
-We can now say that **Expo** is an integral part of React Native, as it is the [**only react native framework**](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps) with huge popularity due to its complete package of production-grade app development tools. The **Expo** team also sees this and has quickly added support for **React Native 0.75** with **Expo SDK 51**
-
-# **Auto-linking performance improvements**
-
-To understand better, let’s first understand a bit of Auto-linking.
-
-### What is Auto-linking?
-
-Auto-linking is a feature introduced in **React Native 0.60** that simplifies the process of **linking** native modules (connecting native code with JS code) to your React Native project. Before **`Auto-linking`**, when you added a new library, you would need to manually link it to your project using tools like **CocoaPods** for **iOS** or **Gradle** for **Android**. **Auto-linking** automates this process, making it easier to install any native modules (libraries) with a simple install command without additional configuration.
-
-### Two Steps of Auto-linking
-
-When a developer runs an **npm** or **yarn** command to install a **native module** package into a React Native app, the package is first downloaded into the app’s **`node_modules`** directory. After the installation is complete, the **auto-linking** process starts. This auto-linking process is completed in **two** steps.
-
-1. **`Discovery Process Step:`** This process again has two steps.
-   1. **`Scanning:`** Right after the native module is downloaded, the **core** of React Native scans your entire project to find the newly added library.
-   2. **`Identifying:`** After scanning, the **core** of React Native identifies the newly installed library and gathers information about it, such as its configuration and dependencies.
-2. **`Code Generation Step:`** Once the **discovery process** is complete, the **core** of React Native now generates the necessary code to link the library’s **native code** to your project’s **JS code**.
-
-### Performance Boost in 0.75
-
-As **Expo** is the only recommended framework by the **React Native team**, both teams made a great decision to split the responsibility of **auto-linking** into two parts, which created a significant performance boost. From now on, the **`Discovery Process Step`** (shown above) will be handled by the **Expo** framework, and the **`Code Generation Step`** will be managed by the **core** of React Native 🔥.
-
-With **Expo SDK 51** and **React Native 0.75**, the auto-linking step for React Native libraries (which are not [**Expo modules**](https://docs.expo.dev/modules/overview/)) is now faster — up to **~6.5x faster** on **Android** and **~1.5x faster** on **iOS**. 🚀.
+This change comes with reduction in app size, and improvement in app startup performance on Android.App size will be reduced by ~3.8MB (20% of the total) and median App startup time will be reduced by ~15ms (~8%)
 
 # That's All 🙋‍♂️
 
