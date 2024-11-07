@@ -77,3 +77,6 @@ This change comes with reduction in app size, and improvement in app startup per
 # That's All 🙋‍♂️
 
 I hope you enjoyed reading it. It would be really great if you could consider giving it a [**STAR**](https://github.com/avisek123/react-native-releases/blob/maste)
+
+![WhatsApp Image 2024-09-19 at 7 49 24 PM (1)](https://github.com/user-attachments/assets/49a25189-6722-4956-a250-e6accab584ab)
+
