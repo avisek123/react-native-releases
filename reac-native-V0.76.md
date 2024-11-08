@@ -5,7 +5,7 @@ Hey **React Native 💙** Developers,
 The highlights are:
 
 - **New Architecture now Default 🚀**
-- **New React Native DevTools (Can add own breakpoints)**
+- **New React Native DevTools (Can add own breakpoints)🛟**
 - **Expo SDK 52 beta released 🔥**
 - **15x Faster Metro build 😱**
 - **New boxShadow style props added**
